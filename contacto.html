@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contacto - Mi Sitio Web Personal</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header>
+      <h1>Mi Sitio Web Personal</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre-mi.html">Sobre Mí</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Para contactarme, por favor utiliza el siguiente formulario:</p>
+        <form action="enviar.php" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Derechos reservados © 2023</p>
+    </footer>
+  </body>
+</html>
